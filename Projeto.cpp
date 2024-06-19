@@ -126,6 +126,7 @@ int main()
 		printf("\t1 - Cadastrar Usuario\n");
 		printf("\t2 - Exibir Usuarios\n");
 		printf("\t3 - Apagar Usuario cadastrado\n\n"); 
+		printf("\t4 - Sair do sistema\n\n");
 		printf("opcao: "); //Fim do menu
 	
 		scanf("%d", &opcao);
@@ -144,6 +145,11 @@ int main()
 		
 			case 3:
 			apagar(); //chamada da função apagar
+			break;
+			
+			case 4:
+			printf("obrigado por utilizar o sistema!\n");
+			return 0;
 			break;
 		
 			default:
